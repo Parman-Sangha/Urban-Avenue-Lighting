@@ -30,25 +30,37 @@ const Cart = () => {
         <h1 className="text-3xl font-bold">
           <Link href="/">Urban Avenue Lighting</Link>
         </h1>
-        <ul className="flex space-x-6">
-          <li>
-            <Link href="/" className="hover:text-yellow-400 transition">
-              Home
-            </Link>
+        <ul className="flex space-x-6 items-center">
+          <li className="hover:text-yellow-500">
+            <Link href="/">Home</Link>
           </li>
-          <li>
-            <Link href="/products" className="hover:text-yellow-400 transition">
-              Products
-            </Link>
+          <li className="hover:text-yellow-500">
+            <Link href="/products">Collection</Link>
           </li>
-          <li>
-            <Link href="/about" className="hover:text-yellow-400 transition">
-              About
-            </Link>
+          <li className="hover:text-yellow-500">
+            <Link href="/about">About Us</Link>
           </li>
-          <li>
-            <Link href="/contact" className="hover:text-yellow-400 transition">
-              Contact
+          <li className="hover:text-yellow-500">
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li className="hover:text-yellow-500">
+            <Link href="/cart">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 mr-1"
+                >
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.6 11.59a.75.75 0 00.74.59h11.91a.75.75 0 00.74-.64l1.44-7.22a1 1 0 00-.97-1.22H6.68"></path>
+                </svg>
+              </div>
             </Link>
           </li>
         </ul>
@@ -131,6 +143,13 @@ const Cart = () => {
           </p>
         )}
       </main>
+      {/* Footer */}
+      <footer className="bg-black text-white py-8 mt-6">
+        <div className="text-center">
+          <p>© 2024 Urban Avenue Lighting. All rights reserved.</p>
+          <p>Illuminating spaces with elegance and style.</p>
+        </div>
+      </footer>
     </div>
   );
 };

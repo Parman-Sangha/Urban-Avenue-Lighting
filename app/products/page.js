@@ -6,66 +6,75 @@ import { useState } from "react";
 const products = [
   {
     id: 1,
-    name: "KD7424-D40",
-    description: "Titanium Gold LED Light, ø400*W15*H50mm",
-    price: "$150",
-    image: "/lighting1.jpg",
+    name: "Titanium Gold LED Light",
+    description:
+      "Contemporary ceiling light in titanium gold finish, ideal for modern interiors.",
+    price: "$180",
+    image: "/images/h.png",
   },
   {
     id: 2,
-    name: "KD91154-M",
-    description: "4-Ring Titanium Gold Light, L1000*W280*H250mm",
-    price: "$320",
-    image: "/lighting2.jpg",
+    name: "4-Ring Titanium Gold Light",
+    description:
+      "Elegant multi-ring light fixture in a striking titanium gold color, perfect for stylish spaces.",
+    price: "$384",
+    image: "/images/h1.png",
   },
   {
     id: 3,
-    name: "KD91107-S",
-    description: "Stainless Steel Silica Light, L850*W300*H300mm",
-    price: "$270",
-    image: "/lighting3.jpg",
+    name: "Stainless Steel Silica Light",
+    description:
+      "Sleek and simple stainless steel light with silica accents, suitable for any room.",
+    price: "$324",
+    image: "/images/h2.png",
   },
   {
     id: 4,
-    name: "KD12345-B",
-    description: "Black LED Pendant Light, ø500*H1200mm",
-    price: "$180",
-    image: "/lighting4.jpg",
+    name: "Black LED Pendant Light",
+    description:
+      "Minimalist black pendant light, ideal for contemporary living areas or kitchens.",
+    price: "$216",
+    image: "/images/h3.png",
   },
   {
     id: 5,
-    name: "KD56789-C",
-    description: "Crystal Chandelier, L1000*W500*H700mm",
-    price: "$450",
-    image: "/lighting5.jpg",
+    name: "Crystal Chandelier",
+    description:
+      "Luxurious crystal chandelier, adds a touch of glamour to any setting.",
+    price: "$540",
+    image: "/images/h4.png",
   },
   {
     id: 6,
-    name: "KD87654-E",
-    description: "Elegant Floor Lamp, H1600mm",
-    price: "$220",
-    image: "/lighting6.jpg",
+    name: "Elegant Floor Lamp",
+    description:
+      "Modern floor lamp in a subtle yet stylish design, perfect for reading nooks.",
+    price: "$264",
+    image: "/images/h5.png",
   },
   {
     id: 7,
-    name: "KD54321-F",
-    description: "Wall-Mounted LED Light, L400*H150mm",
-    price: "$120",
-    image: "/lighting7.jpg",
+    name: "Wall-Mounted LED Light",
+    description:
+      "Functional and fashionable wall-mounted light, enhances any decor.",
+    price: "$144",
+    image: "/images/h6.png",
   },
   {
     id: 8,
-    name: "KD98765-G",
-    description: "LED Table Lamp, H500mm",
-    price: "$90",
-    image: "/lighting8.jpg",
+    name: "LED Table Lamp",
+    description:
+      "Compact and efficient LED table lamp, ideal for desks or bedside tables.",
+    price: "$108",
+    image: "/images/h7.png",
   },
   {
     id: 9,
-    name: "KD13579-H",
-    description: "Modern Pendant Light, ø300*H900mm",
-    price: "$200",
-    image: "/lighting9.jpg",
+    name: "Modern Pendant Light",
+    description:
+      "Stylish pendant light with a modern twist, suitable for high and low ceilings.",
+    price: "$240",
+    image: "/images/h8.png",
   },
 ];
 
@@ -87,12 +96,12 @@ export default function Products() {
         <h1 className="text-3xl font-bold">
           <Link href="/">Urban Avenue Lighting</Link>
         </h1>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 items-center">
           <li className="hover:text-yellow-500">
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-yellow-500">
-            <Link href="/products">Products</Link>
+            <Link href="/products">Collection</Link>
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/about">About Us</Link>
@@ -102,20 +111,22 @@ export default function Products() {
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/cart">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.71 2.028L7.414 11H19a1 1 0 011 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1v-6a1 1 0 011-1h1.586l1.707-4.972m0 0L9.414 7h6.172l1.414 4H8"
-                />
-              </svg>
+                  className="w-5 h-5 mr-1"
+                >
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.6 11.59a.75.75 0 00.74.59h11.91a.75.75 0 00.74-.64l1.44-7.22a1 1 0 00-.97-1.22H6.68"></path>
+                </svg>
+              </div>
             </Link>
           </li>
         </ul>
@@ -124,7 +135,7 @@ export default function Products() {
       {/* Products Section */}
       <section className="py-16 px-6 max-w-7xl mx-auto flex-grow">
         <h1 className="text-4xl font-bold text-center mb-8 text-yellow-500">
-          Our Products
+          Our Collection
         </h1>
         <input
           type="text"

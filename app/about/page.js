@@ -20,12 +20,12 @@ export default function About() {
         <h1 className="text-3xl font-bold">
           <Link href="/">Urban Avenue Lighting</Link>
         </h1>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 items-center">
           <li className="hover:text-yellow-500">
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-yellow-500">
-            <Link href="/products">Products</Link>
+            <Link href="/products">Collection</Link>
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/about">About Us</Link>
@@ -34,22 +34,23 @@ export default function About() {
             <Link href="/contact">Contact</Link>
           </li>
           <li className="hover:text-yellow-500">
-            <Link href="/cart" className="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
+            <Link href="/cart">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M5.75 6.75h12.5m-1.5 3h-10m0 0a1.5 1.5 0 01-1.5-1.5m1.5 1.5a1.5 1.5 0 001.5 1.5m10 0h-10m0 0a1.5 1.5 0 001.5 1.5m0 0a1.5 1.5 0 011.5 1.5v4.5a1.5 1.5 0 01-1.5 1.5H8a1.5 1.5 0 01-1.5-1.5v-4.5a1.5 1.5 0 011.5-1.5m0 0a1.5 1.5 0 011.5-1.5m10 0a1.5 1.5 0 01-1.5 1.5m1.5-1.5V9m0 4.5V18m0-12V6a1.5 1.5 0 00-1.5-1.5h-13A1.5 1.5 0 005.5 6v.75m0 0V6"
-                />
-              </svg>
-              <span className="font-semibold">Cart ({cartItems.length})</span>
+                  className="w-5 h-5 mr-1"
+                >
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.6 11.59a.75.75 0 00.74.59h11.91a.75.75 0 00.74-.64l1.44-7.22a1 1 0 00-.97-1.22H6.68"></path>
+                </svg>
+              </div>
             </Link>
           </li>
         </ul>
@@ -58,7 +59,7 @@ export default function About() {
       {/* Hero Section */}
       <div className="relative w-full h-[50vh] bg-gray-900 text-white flex justify-center items-center">
         <Image
-          src="/about-hero.jpg"
+          src="/images/12.png"
           alt="Elegant lighting decor"
           layout="fill"
           objectFit="cover"

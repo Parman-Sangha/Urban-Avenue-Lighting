@@ -14,21 +14,21 @@ export default function Home() {
       name: "KD7424-D40",
       description: "Titanium Gold LED Light, ø400*W15*H50mm",
       price: "$150",
-      image: "/lighting1.jpg",
+      image: "/images/1.png",
     },
     {
       id: 2,
       name: "KD91154-M",
       description: "4-Ring Titanium Gold Light, L1000*W280*H250mm",
       price: "$320",
-      image: "/lighting2.jpg",
+      image: "/images/2.png",
     },
     {
       id: 3,
       name: "KD91107-S",
       description: "Stainless Steel Silica Light, L850*W300*H300mm",
       price: "$270",
-      image: "/lighting3.jpg",
+      image: "/images/h1.png",
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Home() {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-yellow-500">
-            <Link href="/products">Products</Link>
+            <Link href="/products">Collection</Link>
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/about">About Us</Link>
@@ -56,13 +56,24 @@ export default function Home() {
           <li className="hover:text-yellow-500">
             <Link href="/contact">Contact</Link>
           </li>
-          <li>
-            <Link
-              href="/cart"
-              className="flex items-center space-x-2 hover:text-yellow-500"
-            >
-              <Image src="/cart-icon.png" alt="Cart" width={24} height={24} />
-              <span>({/* cartItems.length */ 0})</span>
+          <li className="hover:text-yellow-500">
+            <Link href="/cart">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 mr-1"
+                >
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.6 11.59a.75.75 0 00.74.59h11.91a.75.75 0 00.74-.64l1.44-7.22a1 1 0 00-.97-1.22H6.68"></path>
+                </svg>
+              </div>
             </Link>
           </li>
         </ul>
@@ -83,17 +94,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Search Bar */}
-      <section className="py-6 px-8 bg-gray-200">
-        <input
-          type="text"
-          placeholder="Search for lights..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full px-4 py-2 border rounded-lg focus:outline-none"
-        />
-      </section>
-
       {/* Featured Products Section */}
       <section className="py-16 px-8 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-yellow-500">
@@ -103,17 +103,18 @@ export default function Home() {
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform"
+              className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-200"
               onMouseEnter={() => setHovered(product.id)}
               onMouseLeave={() => setHovered(null)}
             >
-              <div className="h-60 w-full bg-gray-300 rounded-lg">
+              <div className="h-60 w-full bg-gray-300 rounded-lg overflow-hidden">
                 <Image
                   src={product.image}
                   alt={`${product.name} image`}
+                  layout="responsive"
                   width={300}
-                  height={400}
-                  className="object-cover rounded-lg"
+                  height={225}
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold mt-4">{product.name}</h3>

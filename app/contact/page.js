@@ -17,7 +17,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
-    // Reset form after submission
     setFormData({
       name: "",
       email: "",
@@ -33,12 +32,12 @@ export default function Contact() {
         <h1 className="text-3xl font-bold">
           <Link href="/">Urban Avenue Lighting</Link>
         </h1>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 items-center">
           <li className="hover:text-yellow-500">
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-yellow-500">
-            <Link href="/products">Products</Link>
+            <Link href="/products">Collection</Link>
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/about">About Us</Link>
@@ -63,7 +62,6 @@ export default function Contact() {
                   <circle cx="20" cy="21" r="1"></circle>
                   <path d="M1 1h4l2.6 11.59a.75.75 0 00.74.59h11.91a.75.75 0 00.74-.64l1.44-7.22a1 1 0 00-.97-1.22H6.68"></path>
                 </svg>
-                Cart
               </div>
             </Link>
           </li>
@@ -79,7 +77,6 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
             className="bg-white p-8 rounded-lg shadow-lg"
-            aria-labelledby="contactForm"
           >
             <div className="mb-6">
               <label className="block mb-2 font-semibold" htmlFor="name">
@@ -135,6 +132,14 @@ export default function Contact() {
           </form>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-8 mt-6">
+        <div className="text-center">
+          <p>© 2024 Urban Avenue Lighting. All rights reserved.</p>
+          <p>Illuminating spaces with elegance and style.</p>
+        </div>
+      </footer>
     </div>
   );
 }
