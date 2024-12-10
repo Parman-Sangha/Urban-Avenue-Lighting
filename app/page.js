@@ -149,22 +149,22 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <p className="text-lg">
-              "Urban Avenue Lighting transformed my living space into a work of
-              art. The quality and design are unmatched!"
+              &quot;Urban Avenue Lighting transformed my living space into a
+              work of art. The quality and design are unmatched!&quot;
             </p>
             <p className="mt-4 text-yellow-500 font-bold">- Sarah M.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <p className="text-lg">
-              "I’m in love with my new lighting fixtures. They’ve added so much
-              elegance to my home!"
+              &quot;I’m in love with my new lighting fixtures. They’ve added so
+              much elegance to my home!&quot;
             </p>
             <p className="mt-4 text-yellow-500 font-bold">- James L.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <p className="text-lg">
-              "Exceptional customer service and breathtaking designs. Highly
-              recommend!"
+              &quot;Exceptional customer service and breathtaking designs.
+              Highly recommend!&quot;
             </p>
             <p className="mt-4 text-yellow-500 font-bold">- Emily R.</p>
           </div>

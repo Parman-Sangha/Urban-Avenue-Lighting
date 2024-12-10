@@ -126,7 +126,7 @@ export default function Login() {
           Login with Apple
         </button>
         <p className="mt-6 text-center text-sm text-gray-600">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/signup">
             <a className="text-blue-500 hover:underline">Sign up</a>
           </Link>
