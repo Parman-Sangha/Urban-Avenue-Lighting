@@ -104,7 +104,7 @@ export default function About() {
               onClick={() => addToCart({ name: "Innovative Designs" })}
               className="mt-4 bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600"
             >
-              Add to Cart
+              Learn More
             </button>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-lg">
@@ -119,7 +119,7 @@ export default function About() {
               onClick={() => addToCart({ name: "Custom Solutions" })}
               className="mt-4 bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600"
             >
-              Add to Cart
+              Learn More
             </button>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-lg">
@@ -135,7 +135,7 @@ export default function About() {
               onClick={() => addToCart({ name: "Sustainability" })}
               className="mt-4 bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600"
             >
-              Add to Cart
+              Learn More
             </button>
           </div>
         </div>
