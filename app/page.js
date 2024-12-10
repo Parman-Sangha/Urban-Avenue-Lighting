@@ -43,7 +43,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold">
           <Link href="/">Urban Avenue Lighting</Link>
         </h1>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 items-center">
           <li className="hover:text-yellow-500">
             <Link href="/">Home</Link>
           </li>
@@ -55,6 +55,15 @@ export default function Home() {
           </li>
           <li className="hover:text-yellow-500">
             <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link
+              href="/cart"
+              className="flex items-center space-x-2 hover:text-yellow-500"
+            >
+              <Image src="/cart-icon.png" alt="Cart" width={24} height={24} />
+              <span>({/* cartItems.length */ 0})</span>
+            </Link>
           </li>
         </ul>
       </nav>
